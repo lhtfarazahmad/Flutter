@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:second_app/fetch_data.dart';
 import 'package:second_app/form.dart';
+import 'package:second_app/navigation.dart';
 import 'package:second_app/send_data.dart';
+import 'package:second_app/shimmer_loading.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const appTitle = 'Form Validation Demo';
+    const appTitle = 'Second App';
 
     return MaterialApp(
       title: appTitle,
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text(appTitle),
         ),
-        body: const SendData(),
+        body: const ShimmerExample(),
       ),
     );
   }
